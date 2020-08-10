@@ -1,0 +1,8 @@
+#!name=Google Map
+#!desc=redirect google maps
+
+[URL Rewrite]
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+
+[MITM]
+hostname = %APPEND% www.google.cn
